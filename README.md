@@ -13,5 +13,5 @@
 - Developed a dashboard showcasing vital statistics for NYC properties, such as change in sales prices over time, number of properties per sales price bracket, and average property gross square feet per neighborhood, using multiple visualizations (maps, timelines, graphs) and filters (neighborhood, borough, year) in **Tableau**
 
 ### NYC Airbnb Property Analysis - Personal Project (_August 2024_)
-Utilized **Excel** to reorganize raw data for 49,000 properties and create a dashboard showcasing key information using pivot tables, graphs, and slicers
-Created a dashboard in **Tableau** displaying the data through heatmaps, tables, and charts to better visualize important statistics for the properties, such as location density, number of property reviews per month, and availability 
+- Utilized **Excel** to reorganize raw data for 49,000 properties and create a dashboard showcasing key information using pivot tables, graphs, and slicers
+- Created a dashboard in **Tableau** displaying the data through heatmaps, tables, and charts to better visualize important statistics for the properties, such as location density, number of property reviews per month, and availability 
