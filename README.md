@@ -24,6 +24,8 @@
 - Created lookup tables for property location information using xlookup, as well as charts and pivot tables to display the number of properties per sales price bracket by borough in **Excel**
 - Developed a dashboard showcasing vital statistics for NYC properties, such as change in sales prices over time, number of properties per sales price bracket, and average property gross square feet per neighborhood, using multiple visualizations (maps, timelines, graphs) and filters (neighborhood, borough, year) in **Tableau**
 
+[NYC Real Estate Property Sales Analysis Excel Workbook](https://1drv.ms/x/c/ca42e2b17264ec44/EUTsZHKx4kIggMqAAAAAAAABZsAYO15HHo9QkbF3f6liEQ?e=RuTzHI)
+
 ### NYC Airbnb Property Analysis - Personal Project (_August 2024_)
 - Utilized **Excel** to reorganize raw data for 49,000 properties and create a dashboard showcasing key information using pivot tables, graphs, and slicers
 - Created a dashboard in **Tableau** displaying the data through heatmaps, tables, and charts to better visualize important statistics for the properties, such as location density, number of property reviews per month, and availability 
