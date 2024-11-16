@@ -1,0 +1,69 @@
+#the goal is to update the data in the schema and identify all the people who are 65 years old or older 
+#(minimum age requirement for medicare) and the data surrounding their hospital visits
+
+#select fields for final product
+select
+patient_records.id,
+patient_records.patient_name,
+patient_records.date_of_birth,
+medical_records.medical_condition,
+medical_records.treatment,
+billing_records.admit_date,
+billing_records.discharge_date,
+billing_records.bill_amount
+from patient_records
+join medical_records
+on patient_records.id = medical_records.id
+join billing_records
+on billing_records.id = medical_records.id;
+
+#enable alterations to table
+set sql_safe_updates = 0;
+
+#remove special characters and commmas
+update billing_records
+set bill_amount=replace(bill_amount,'$','')
+where bill_amount like '$%';
+
+update billing_records
+set bill_amount=replace(bill_amount,',','')
+where bill_amount like '%,%';
+
+#change data in column from varchar to decimal
+update billing_records
+set bill_amount=cast(bill_amount as decimal(20,2));
+
+alter table billing_records
+modify bill_amount decimal(20,2);
+
+#disable alterations to table
+set sql_safe_updates = 1;
+
+#select only those whose age is greater than or equal to 65
+select 
+id,
+patient_name,
+date_of_birth,
+year(curdate())-year(date_of_birth) as medicare_age
+from patient_records
+where year(curdate())-year(date_of_birth) >= 65;
+
+#final product
+select
+patient_records.id,
+patient_records.patient_name,
+patient_records.date_of_birth,
+medical_records.medical_condition,
+medical_records.treatment,
+billing_records.admit_date,
+billing_records.discharge_date,
+billing_records.bill_amount
+from patient_records
+join medical_records
+on patient_records.id = medical_records.id
+join billing_records
+on billing_records.id = medical_records.id
+where year(curdate())-year(date_of_birth) >= 65;
+
+
+
