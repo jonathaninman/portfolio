@@ -30,4 +30,8 @@
 
 ### NYC Airbnb Property Analysis - Personal Project (_August 2024_)
 - Utilized **Excel** to reorganize raw data for 49,000 properties and create a dashboard showcasing key information using pivot tables, graphs, and slicers
-- Created a dashboard in **Tableau** displaying the data through heatmaps, tables, and charts to better visualize important statistics for the properties, such as location density, number of property reviews per month, and availability 
+- Created a dashboard in **Tableau** displaying the data through heatmaps, tables, and charts to better visualize important statistics for the properties, such as location density, number of property reviews per month, and availability
+
+  [Excel Workbook](https://1drv.ms/x/c/ca42e2b17264ec44/EUTsZHKx4kIggMp6AAAAAAABEzcR1HuTO8vNLvBEmr8mnA?e=S0PQh9)
+
+  [Tableau Public Visualization](/assets/nyc_airbnb.twbx)
