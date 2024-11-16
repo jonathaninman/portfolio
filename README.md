@@ -25,6 +25,7 @@
 - Developed a dashboard showcasing vital statistics for NYC properties, such as change in sales prices over time, number of properties per sales price bracket, and average property gross square feet per neighborhood, using multiple visualizations (maps, timelines, graphs) and filters (neighborhood, borough, year) in **Tableau**
 
 [Excel Workbook](https://1drv.ms/x/c/ca42e2b17264ec44/EUTsZHKx4kIggMqAAAAAAAABZsAYO15HHo9QkbF3f6liEQ?e=RuTzHI)
+
 [Tableau Public Visualization](https://public.tableau.com/shared/ZKRFGMN2D?:display_count=n&:origin=viz_share_link)
 
 ### NYC Airbnb Property Analysis - Personal Project (_August 2024_)
