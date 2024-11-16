@@ -8,6 +8,7 @@
 - Combined said three tables into one single SQL query that provided the data on the hospital visits and subsequent costs for patients over age 65 who qualify for Medicare
 - Imported the final query into **PowerBI** in order to create compelling and easy to understand visuals showcasing the desired data
 
+[MySQL Code](/assets/hospital_records_mysql)
 ![Hospital Records Visualisation in PowerBI](/assets/hospital_records_powerbi.png)
 
 ### Chicago Weather Analysis - Personal Project (_October 2024_)
