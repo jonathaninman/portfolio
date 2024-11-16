@@ -1,1 +1,128 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+from bs4 import BeautifulSoup as bs
+import pandas as pd
+import requests
+
+
+# In[2]:
+
+
+url = 'https://en.wikipedia.org/wiki/Chicago#'
+
+page = requests.get(url)
+
+soup = bs(page.text, 'html')
+
+
+# In[3]:
+
+
+#print(soup)
+
+
+# In[4]:
+
+
+table = soup.find_all('table')[1]
+
+
+# In[5]:
+
+
+#print(table)
+
+
+# In[6]:
+
+
+table.find_all('th')[2:15]
+
+
+# In[7]:
+
+
+table_titles = table.find_all('th')[2:15]
+
+
+# In[8]:
+
+
+strip_table_titles = [title.text.strip() for title in table_titles]
+
+
+# In[9]:
+
+
+print(strip_table_titles)
+
+
+# In[10]:
+
+
+df = pd.DataFrame(columns = strip_table_titles)
+df
+
+
+# In[11]:
+
+
+column_data = table.find_all('tr')[2:14]
+print(column_data)
+
+
+# In[12]:
+
+
+for row in column_data:
+    row_data = row.find_all('td')
+    individual_row_data = [data.text.strip() for data in row_data]
+    print(individual_row_data)
+
+    length = len(df)
+    df.loc[length] = individual_row_data
+
+
+# In[13]:
+
+
+first_data = table.find_all('th')[15:]
+print(first_data)
+
+
+# In[14]:
+
+
+strip_index_titles = [data.text.strip() for data in first_data]
+print(strip_index_titles)
+
+
+# In[15]:
+
+
+df2 = pd.DataFrame(strip_index_titles)
+df2
+
+
+# In[16]:
+
+
+df.insert(0, "Month", strip_index_titles)
+
+
+# In[17]:
+
+
+df.set_index("Month")
+
+
+# In[18]:
+
+
+df.to_csv(r'/Users/jonathan_inman/Downloads/chicago_weather.csv')
+
 
