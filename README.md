@@ -9,11 +9,15 @@
 - Imported the final query into **PowerBI** in order to create compelling and easy to understand visuals showcasing the desired data
 
 [MySQL Code](/assets/hospital_records_mysql)
-![Hospital Records Visualisation in PowerBI](/assets/hospital_records_powerbi.png)
+![Hospital Records Visualization in PowerBI](/assets/hospital_records_powerbi.png)
 
 ### Chicago Weather Analysis - Personal Project (_October 2024_)
 - Created a dataframe displaying the average weather data collected by Chicago’s Midway Airport from 1991 to 2020 through web scraping Chicago’s Wikipedia page using **Python**
 - Utilized **Excel** to clean the raw data and created visualizations for the data using conditional formatting and graph manipulation displaying the average change in temperature, precipitation, and UV index per month
+
+[Python Code](/assets/chicago_weather_data_python)
+![Chicago Weather Data Excel Visualization](/assets/chicago_weather_data_excel.png)
+[Other Graphical Visualizations in Excel](/chicago_weather_data_graphs.pdf)
 
 ### NYC Real Estate Property Sales Analysis - Virtual Client Project (_September 2024_)
 - Utilized **Excel** to clean and organize the real estate data (sale price and date, tax class, location, square footage) of over 80,000 properties
