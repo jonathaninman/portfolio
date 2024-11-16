@@ -3,6 +3,13 @@
 #### Technical Skills: SQL, Python, Tableau, PowerBI, JupyterNotebooks, Excel
 
 ## Projects
+### Hospital Records Analysis - Virtual Client Project (_November 2024_)
+- Transformed data from a .csv file describing the hospital visits of patients (treatments, admittance time, bill amount, etc.) into three different organized tables using **MySQL**
+- Combined said three tables into one single SQL query that provided the data on the hospital visits and subsequent costs for patients over age 65 who qualify for Medicare
+- Imported the final query into **PowerBI** in order to create compelling and easy to understand visuals showcasing the desired data
+
+![Hospital Records Visualisation in PowerBI](/assets/hospital_records_powerbi.png)
+
 ### Chicago Weather Analysis - Personal Project (_October 2024_)
 - Created a dataframe displaying the average weather data collected by Chicago’s Midway Airport from 1991 to 2020 through web scraping Chicago’s Wikipedia page using **Python**
 - Utilized **Excel** to clean the raw data and created visualizations for the data using conditional formatting and graph manipulation displaying the average change in temperature, precipitation, and UV index per month
