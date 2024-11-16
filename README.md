@@ -26,7 +26,7 @@
 
 [Excel Workbook](https://1drv.ms/x/c/ca42e2b17264ec44/EUTsZHKx4kIggMqAAAAAAAABZsAYO15HHo9QkbF3f6liEQ?e=RuTzHI)
 
-[Tableau Public Visualization](https://public.tableau.com/shared/ZKRFGMN2D?:display_count=n&:origin=viz_share_link)
+[Tableau Public Visualization](/assets/nyc_property_sales.twbx)
 
 ### NYC Airbnb Property Analysis - Personal Project (_August 2024_)
 - Utilized **Excel** to reorganize raw data for 49,000 properties and create a dashboard showcasing key information using pivot tables, graphs, and slicers
